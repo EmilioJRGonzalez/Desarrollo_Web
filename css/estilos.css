@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.portada{
+    background-image: url("../assets/img/theme-slide7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    height: 800px;
+}
+
+.portada2{
+    background-image: url("../assets/img/page-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    height: 600px;
+}
+
+.navegacion{
+    background: white;
+    height: 100px;
+    width: 70%;
+    margin: 25px auto;
+}
+
+.menu{
+    font-size: 1.5rem;
+    font-weight: 900;
+    list-style:none; 
+    text-align: center;
+    /*border: 1px solid green;*/
+    margin: 5px auto;
+    padding: 35px;
+}
+
+.menu li{
+    display:inline-block;
+    padding: 0 3rem;
+    border-color: 5px solid black;
+}
+
+.linkMenu{
+    color:#fd869c;
+    text-decoration: none;
+}
+
+.fondo{
+    /*background-image: linear-gradient(to top, #f5efef 20%, #feada6 100%);*/
+    /*
+    background: rgba(253,134,156,0.37);
+    background: linear-gradient(270deg,rgba(253,134,156,0.37) 0%, rgba(253,134,156,0.08) 10%);
+    background: -webkit-linear-gradient(270deg,rgba(253,134,156,0.37) 0%, rgba(253,134,156,0.08) 10%);
+    background: -moz-linear-gradient(270deg,rgba(253,134,156,0.37) 0%, rgba(253,134,156,0.08) 10%);
+    */
+    background: rgba(255,171,186,0.78);
+    background: linear-gradient(270deg,rgba(255,171,186,0.78) 0%, rgba(253,134,156,0.26) 20%, rgba(253,134,156,0.03) 90%);
+    background: -webkit-linear-gradient(270deg,rgba(255,171,186,0.78) 0%, rgba(253,134,156,0.26) 20%, rgba(253,134,156,0.03) 90%);
+    background: -moz-linear-gradient(270deg,rgba(255,171,186,0.78) 0%, rgba(253,134,156,0.26) 20%, rgba(253,134,156,0.03) 90%);
+}
+
+.titulo{
+    color: #5f323b;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    color: #fd869c;
+    width: 40%;
+    margin: 30px auto;
+    height: 3px;
+    background-color: #fd869c;
+}
+
+.centrar{
+    text-align: center;
+    color: #5f323b;
+}
+
+.servicios{
+    text-align: center;/*que su contenido se alinea de manera centrada, es decir las tarjetas*/
+    padding-top:50px;
+    padding-bottom: 50px;  
+    color: #fd869c;  
+}
+
+.items{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin-bottom: 1rem;/*margin de abajo*/
+    border-radius: 10px;/*un borde redondeado*/
+    overflow: hidden;/*si el contenido se excede no se muestra*/
+    width: 25%;/*ocupa el 25% de la pantalla*/
+    height: 65vh;/*esto es para que ocupe el 65% de la pantalla que se ve, 1vh = 1%*/
+    display: inline-block;/*de esta manera las tarjetas pasan a ser elementos en linea, se ubican una al lado de la otra*/
+}
+
+.items img{
+    width: 100%;/*para que la imagen ocupe todo el ancho de la tarjeta*/
+    height: 85%;/*del 65vh va a ocupar un 85%*/
+    object-fit: cover;/*la imagen no se deforma, y trata de ocupar la nueva dimension que se le establece*/
+}
+
+.pad1{
+    margin-top: 20px;
+}
+
+.piePagina{
+    text-align: center;
+    color: #9e5462;
+}
+
+.derechos{
+    margin-top: 20px;
+    font-size: 0.80rem;
+    font-weight: bold;
+}
+
+.redes{
+    background-color:rgba(255, 255, 255, 0.63);
+    height: 108px;
+    width:80px;
+    position:fixed;
+    bottom: 0;
+    right:0;
+    border-radius: 5%;
+}
+
+.iconos{
+    font-size: 50px;
+    color: #fd869c;
+}
+
+
+
+
+
