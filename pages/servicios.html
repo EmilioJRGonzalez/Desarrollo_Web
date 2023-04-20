@@ -7,56 +7,112 @@
         <title>RelajeCe</title>
         <link rel="stylesheet" href="../css/fontawesome/all.min.css">
         <script src="../js/all.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/estilos.css">
     </head>
     <body>
-        <header class="portada2">
-            <div>
-                <img src="../assets/img/logo-removebg.png" alt="logo" width="100px">
+        <header class="portada2 container-fluid">
+            
+            <div class="contenedorHeader2 container-fluid">
+
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-2">
+                        <img src="../assets/img/logo-removebg.png" alt="logo" width="100px">
+                    </div>
+
+                    <div class="col-sm-12 col-md-8 align-self-end">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <div class="container-fluid">
+                              <a class="navbar-brand" href="#">RelajeCe</a>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav w-100 d-flex justify-content-end">
+                                  <li class="nav-item">
+                                    <a class="nav-link menu-boton" href="../index.html">Inicio</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link active menu-activo" href="#">Servicios</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link menu-boton" href="./reserva.html">Reserva</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link menu-boton" href="./nosotros.html">Nosotros</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link menu-boton" href="./contacto.html">Contacto</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                        </nav>
+                    </div>
+                    
+                </div>
+
             </div>
-            <nav class="navegacion">
-                
-                <ul class="menu">
-                    <li><a class="linkMenu" href="../index.html">Inicio</a></li>
-                    <li><a class="linkMenu" href="./servicios.html">Nuestros Servicios </a></li>
-                    <li><a class="linkMenu" href="./reserva.html">Reserva </a></li>
-                    <li><a class="linkMenu" href="./nosotros.html">Nosotros </a></li>
-                    <li><a class="linkMenu" href="./contacto.html">Contacto </a></li>
-                </ul>
-            </nav>
-            <br>
-            <br>
-            <br>
-            <br>
+
         </header>
-        <main class="fondo">
-            <br>
-            <br>
-            <div>
+        <main class="fondo p-4">
+            <div class="p-4">
                 <h1 class="centrar titulo">Nuestros Servicios</h1>
             </div>
 
-            <br>
-            <br>
-            <br>
-            <br>         
+            <div class="container">
+                <div id="descontracturante" class="card mb-3 servicio-descripcion">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../assets/img/masaje-1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title p-4">Descontracturante</h5>
+                            <p class="card-text p-4">Técnicas tanto manuales como con elementos, mediante el cual se logra relajar el músculo que se encuentra contraído y provoca dolor en algún lugar del cuerpo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div id="linfatico" class="card mb-3 servicio-descripcion">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../assets/img/masaje-2.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title p-4">Drenaje Linfático</h5>
+                            <p class="card-text p-4">Maniobras que activan los ganglios corporales y permiten, mediante estímulos manuales, drenar el líquido acumulado en el cuerpo, así como toxinas que se desprenden de las diferentes partes del cuerpo a tratar, de alimentos y actividad física acorde a las posibilidades de la persona.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         
         </main>
         
-        <footer class="piePagina">
+        <footer class="container-fluid piePagina p-4">
             <hr>
-            <div>
-                <p>solicitudes@relajece.com</p>
-                <br>
-                <p>+(15) 1122-3344</p>
-                <br>
-                <p>Camacua 60, Flores</p>
-                <br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.0500646762384!2d-58.458236400000004!3d-34.6281751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca266cd64faf%3A0xd2f35aa38c7f0e08!2sCamacu%C3%A1%2060%2C%20C1406DOB%20CABA!5e0!3m2!1ses!2sar!4v1679521414773!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <br>
+            <div class="row">
+                <div class="mt-2">
+                    <p>solicitudes@relajece.com</p>
+                </div>
+                <div class="mt-2">
+                    <p>+(15) 1122-3344</p>
+                </div>
+                <div class="mt-2">
+                    <p>Camacua 60, Flores</p>
+                </div>
+                <div class="mt-2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.0500646762384!2d-58.458236400000004!3d-34.6281751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca266cd64faf%3A0xd2f35aa38c7f0e08!2sCamacu%C3%A1%2060%2C%20C1406DOB%20CABA!5e0!3m2!1ses!2sar!4v1679521414773!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
 
-            <p class="derechos">todos los derechos reservados</p>
+            <p class="derechos">© 2023 Todos los derechos reservados</p>
 
             <div class="redes">
                 <a href="https://www.instagram.com/relajece/" target="_blank"> <i class="iconos fa-brands fa-instagram"></i> </a>
@@ -64,6 +120,7 @@
             </div>
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         
     </body>
 </html>
