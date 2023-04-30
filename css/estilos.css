@@ -12,42 +12,24 @@ body{
     font-size: 1.25rem;
 }
 
-.portada{
-    background-image: url("../assets/img/theme-slide7.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 85vh;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.contenedorHeader{
-    width: 100%;
-    height: 85vh;
-    margin: 0 auto;
-    background-color: #40404046;
-    backdrop-filter: blur(1px);
-}
-
 .logo-w{
     width: 100px;
 }
 
-.portada2{
-    background-image: url("../assets/img/page-header.jpg");
+.portada{
+    background-image: linear-gradient(to right, #2c2c2c7a, #00000047), url("../assets/img/theme-slide7.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /*background-attachment: fixed;*/
-    height: 62vh;
+    height: 85vh;
 }
 
-.contenedorHeader2{
-    width: 100%;
+.portada2{
+    background-image: linear-gradient(to right, #2c2c2c7a, #00000047), url("../assets/img/page-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 62vh;
-    margin: 0;
-    background-color: #40404046;
-    backdrop-filter: blur(1px);
 }
 
 .linkMenu{
