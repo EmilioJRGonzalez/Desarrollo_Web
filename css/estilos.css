@@ -29,6 +29,10 @@ body{
     backdrop-filter: blur(1px);
 }
 
+.logo-w{
+    width: 100px;
+}
+
 .portada2{
     background-image: url("../assets/img/page-header.jpg");
     background-size: cover;
@@ -150,6 +154,10 @@ hr{
     color: white;
 }
 
+.dropdown-item:active{
+    background-color: #9e5462!important;
+}
+
 
 
 
@@ -162,8 +170,8 @@ CALENDARIO By Alex Oliver https://www.sliderrevolution.com/resources/html-calend
 ======================================================================
 */
 
-  
-  /* required */
+
+/* required */
 .calendar{
     position: relative;
     border-radius: 10px;
@@ -179,7 +187,7 @@ CALENDARIO By Alex Oliver https://www.sliderrevolution.com/resources/html-calend
     color: #333333;
   }
   
-  .calendar h1, .calendar h2{
+  .calendar h2{
     font-weight: 300;
     font-size: 26px;
     line-height: 28px;
@@ -187,7 +195,7 @@ CALENDARIO By Alex Oliver https://www.sliderrevolution.com/resources/html-calend
     margin: 0px 0px 20px 0px;
   }
   
-  .calendar h1 span{
+  .calendar h2 span{
     display: block;
   }
   
@@ -254,7 +262,7 @@ CALENDARIO By Alex Oliver https://www.sliderrevolution.com/resources/html-calend
     font-size: 16px;
   }
   
-  .calendar .leftCol h1{
+  .calendar .leftCol h2{
     color: #ffffff;
     margin-bottom: 40px;
   }
@@ -263,7 +271,7 @@ CALENDARIO By Alex Oliver https://www.sliderrevolution.com/resources/html-calend
     width: 60%;
   }
   
-  .calendar .rightCol h2{
+  .calendar .rightCol h3{
     color: #C7BEBE;
     text-align: right;
     margin-bottom: 40px;
@@ -343,14 +351,24 @@ CALENDARIO By Alex Oliver https://www.sliderrevolution.com/resources/html-calend
  
 
 
+@media only screen and (max-width: 768px) {
+    .calendar{
+        width: 480px;
+        height: 450px;
+        left: 50%;
+        margin-left: -240px;
+    }
 
+    .calendar .leftCol{
+        visibility: hidden;
+        width: 0%;
+    }
 
-
-
-
-
-
-
+    .calendar .rightCol{
+        width: 100%;
+    }
+    
+}
 
 
 

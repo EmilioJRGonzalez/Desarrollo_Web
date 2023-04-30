@@ -1,198 +1,218 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>RelajeCe</title>
-        <link rel="icon" type="image/x-icon" href="../favicon.ico">
-        <link rel="stylesheet" href="../css/fontawesome/all.min.css">
-        <script src="../js/all.min.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/estilos.css">
-    </head>
-    <body>
-        <header class="portada2 container-fluid">
-            
-            <div class="contenedorHeader2 container-fluid">
 
-                <div class="row">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RelajeCe</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/fontawesome/all.min.css">
+    <script src="../js/all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
 
-                    <div class="col-sm-12 col-md-2">
-                        <img src="../assets/img/logo-removebg.png" alt="logo" width="100px">
-                    </div>
+<body>
+    <header class="portada2 container-fluid">
 
-                    <div class="col-sm-12 col-md-8 align-self-end">
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                            <div class="container-fluid">
-                              <a class="navbar-brand" href="#">RelajeCe</a>
-                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="contenedorHeader2 container-fluid">
+
+            <div class="row">
+
+                <div class="col-sm-12 col-md-2">
+                    <img src="../assets/img/logo-removebg.png" alt="logo" class="logo-w">
+                </div>
+
+                <div class="col-sm-12 col-md-8 align-self-end">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">RelajeCe</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
-                              </button>
-                              <div class="collapse navbar-collapse" id="navbarNav">
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav w-100 d-flex justify-content-end">
-                                  <li class="nav-item">
-                                    <a class="nav-link menu-boton"href="../index.html">Inicio</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link menu-boton" href="./servicios.html">Servicios</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link active menu-activo" href="#">Reserva</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link menu-boton" href="./nosotros.html">Nosotros</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link menu-boton" href="./contacto.html">Contacto</a>
-                                  </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-boton" href="../index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-boton" href="./servicios.html">Servicios</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active menu-activo" href="#">Reserva</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-boton" href="./nosotros.html">Nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-boton" href="./contacto.html">Contacto</a>
+                                    </li>
                                 </ul>
-                              </div>
                             </div>
-                        </nav>
-                    </div>
-                    
+                        </div>
+                    </nav>
                 </div>
 
             </div>
 
-        </header>
-        <main class="fondo">
-            <div class="p-5">
-                <h1 class="centrar titulo">Reserva</h1>
+        </div>
+
+    </header>
+    <main class="fondo">
+        <div class="p-5">
+            <h1 class="centrar titulo">Reserva</h1>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    Elija el servicio que desea reservar
+                </div>
+                <div class="col-md-12 text-center pt-5">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle btn-pink" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicio
+                        </a>
+                    
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#calendar">Descontracturante</a></li>
+                            <li><a class="dropdown-item" href="#calendar">Drenaje Linfatico</a></li>
+                            <li><a class="dropdown-item" href="#calendar">Reductor</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div class="container">
+        <div class="container">
 
-                <div id="calendar" class="calendar">
+            <div id="calendar" class="calendar">
 
-                    <div class="col leftCol">
-                        <div class="content">
-                        <h1 class="date">Viernes<span>12 de Septiembre</span></h1>
+                <div class="col leftCol">
+                    <div class="content">
+                        <h2 class="date">Viernes<span>12 de Septiembre</span></h2>
                         <div class="notes">
                             <p>
-                            <input type="text" value="" placeholder="Agregar nota"/>
-                            <a href="#" onclick="return false;" title="Add note" class="addNote animate">+</a>
+                                <input type="text" value="" placeholder="Agregar nota" />
+                                <a href="#" onclick="return false;" title="Add note" class="addNote animate">+</a>
                             </p>
                             <ul class="noteList">
-                            <li>Confirmar via WhatsApp<a href="#" onclick="return false;" title="Remove note" class="removeNote animate">x</a></li>
+                                <li>Confirmar via WhatsApp<a href="#" onclick="return false;" title="Remove note"
+                                        class="removeNote animate">x</a></li>
                             </ul>
-                        </div>
                         </div>
                     </div>
-                
-                    <div class="col rightCol">
-                        <div class="content">
-                            <h2 class="year">2023</h2>
-                            <ul class="months">
-                                <li><a href="#" onclick="return false;" title="Ene" data-value="1">Ene</a></li>
-                                <li><a href="#" onclick="return false;" title="Feb" data-value="2">Feb</a></li>
-                                <li><a href="#" onclick="return false;" title="Mar" data-value="3">Mar</a></li>
-                                <li><a href="#" onclick="return false;" title="Abr" data-value="4">Abr</a></li>
-                                <li><a href="#" onclick="return false;" title="May" data-value="5">May</a></li>
-                                <li><a href="#" onclick="return false;" title="Jun" data-value="6">Jun</a></li>
-                                <li><a href="#" onclick="return false;" title="Jul" data-value="7">Jul</a></li>
-                                <li><a href="#" onclick="return false;" title="Ago" data-value="8">Ago</a></li>
-                                <li><a href="#" onclick="return false;" title="Sep" data-value="9" class="selected">Sep</a></li>
-                                <li><a href="#" onclick="return false;" title="Oct" data-value="10">Oct</a></li>
-                                <li><a href="#" onclick="return false;" title="Nov" data-value="11">Nov</a></li>
-                                <li><a href="#" onclick="return false;" title="Dic" data-value="12">Dic</a></li>
-                            </ul>
-                            <div class="clearfix"></div>
-                            <ul class="weekday">
-                                <li><a href="#" onclick="return false;" title="Mon" data-value="1">Lun</a></li>
-                                <li><a href="#" onclick="return false;" title="Tue" data-value="2">Mar</a></li>
-                                <li><a href="#" onclick="return false;" title="Wed" data-value="3">Mie</a></li>
-                                <li><a href="#" onclick="return false;" title="Thu" data-value="4">Jue</a></li>
-                                <li><a href="#" onclick="return false;" title="Fri" data-value="5">Vie</a></li>
-                                <li><a href="#" onclick="return false;" title="Say" data-value="6">Sab</a></li>
-                                <li><a href="#" onclick="return false;" title="Sun" data-value="7">Dom</a></li>
-                            </ul>
-                            <div class="clearfix"></div>
-                            <ul class="days">
-                                <script>
-                                for( var _i = 1; _i <= 31; _i += 1 ){
-                                    var _addClass = '';
-                                    if( _i === 12 ){ _addClass = ' class="selected"'; }
-                                    
-                                    switch( _i ){
-                                    case 8:
-                                    case 10:
-                                    case 27:
-                                        _addClass = ' class="event"';
-                                    break;
-                                    }
-                    
-                                    document.write( '<li><a href="#" onclick="return false;" title="'+_i+'" data-value="'+_i+'"'+_addClass+'>'+_i+'</a></li>' );
-                                }
-                                </script>
-                            </ul>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-            
-                    <div class="clearfix"></div>
                 </div>
-                
+
+                <div class="col rightCol">
+                    <div class="content">
+                        <h3 class="year">2023</h3>
+                        <ul class="months">
+                            <li><a href="#" onclick="return false;" title="Enero" data-value="1">Ene</a></li>
+                            <li><a href="#" onclick="return false;" title="Febero" data-value="2">Feb</a></li>
+                            <li><a href="#" onclick="return false;" title="Marzo" data-value="3">Mar</a></li>
+                            <li><a href="#" onclick="return false;" title="Abril" data-value="4">Abr</a></li>
+                            <li><a href="#" onclick="return false;" title="Mayo" data-value="5">May</a></li>
+                            <li><a href="#" onclick="return false;" title="Junio" data-value="6">Jun</a></li>
+                            <li><a href="#" onclick="return false;" title="Julio" data-value="7">Jul</a></li>
+                            <li><a href="#" onclick="return false;" title="Agosto" data-value="8">Ago</a></li>
+                            <li><a href="#" onclick="return false;" title="Septiembre" data-value="9" class="selected">Sep</a></li>
+                            <li><a href="#" onclick="return false;" title="Octubre" data-value="10">Oct</a></li>
+                            <li><a href="#" onclick="return false;" title="Noviembre" data-value="11">Nov</a></li>
+                            <li><a href="#" onclick="return false;" title="Diciembre" data-value="12">Dic</a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <ul class="weekday">
+                            <li><a href="#" onclick="return false;" title="Lunes" data-value="1">Lun</a></li>
+                            <li><a href="#" onclick="return false;" title="Martes" data-value="2">Mar</a></li>
+                            <li><a href="#" onclick="return false;" title="Miercoles" data-value="3">Mie</a></li>
+                            <li><a href="#" onclick="return false;" title="Jueves" data-value="4">Jue</a></li>
+                            <li><a href="#" onclick="return false;" title="Viernes" data-value="5">Vie</a></li>
+                            <li><a href="#" onclick="return false;" title="Sabado" data-value="6">Sab</a></li>
+                            <li><a href="#" onclick="return false;" title="Domingo" data-value="7">Dom</a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <ul class="days">
+                            <script src="../js/calendar.js"></script> 
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
             </div>
 
-            <div class="container">
-                <!-- Button trigger modal -->
-                <div class="d-grid gap-2 d-md-flex justify-content-center">
-                    <button type="button" class="btn btn-lg btn-pink" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Reservar turno
-                    </button>
-                </div>
-                
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
+        </div>
+
+        <div class="container">
+            <!-- Button trigger modal -->
+            <div class="d-grid gap-2 d-md-flex justify-content-center">
+                <button type="button" class="btn btn-lg btn-pink" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Reservar turno
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Reserva</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h2 class="modal-title" id="exampleModalLabel">Reserva</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                        Su reserva fue realizada con exito. <br>
-                        Gracias por elegirnos!
+                            Su reserva fue realizada con exito. <br>
+                            Gracias por elegirnos!
                         </div>
                         <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
-  
-        
-        </main>
-        
-        <footer class="container-fluid piePagina p-4">
-          <hr>
-          <div class="row">
-              <div class="mt-2">
-                  <p>solicitudes@relajece.com</p>
-              </div>
-              <div class="mt-2">
-                  <p>+(15) 1122-3344</p>
-              </div>
-              <div class="mt-2">
-                  <p>Camacua 60, Flores</p>
-              </div>
-              <div class="mt-2">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.0500646762384!2d-58.458236400000004!3d-34.6281751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca266cd64faf%3A0xd2f35aa38c7f0e08!2sCamacu%C3%A1%2060%2C%20C1406DOB%20CABA!5e0!3m2!1ses!2sar!4v1679521414773!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-          </div>
+        </div>
 
-          <p class="derechos">© 2023 Todos los derechos reservados</p>
 
-            <div class="redes">
-                <a href="https://www.instagram.com/relajece/" target="_blank"> <i class="iconos fa-brands fa-instagram"></i> </a>
-                <a href="https://web.whatsapp.com/" target="_blank"> <i class="iconos fa-brands fa-whatsapp fa-bounce"></i> </a>
+    </main>
+
+    <footer class="container-fluid piePagina p-4">
+        <hr>
+        <div class="row">
+            <div class="mt-2">
+                <p>solicitudes@relajece.com</p>
             </div>
-        </footer>
+            <div class="mt-2">
+                <p>+(15) 1122-3344</p>
+            </div>
+            <div class="mt-2">
+                <p>Camacua 60, Flores</p>
+            </div>
+            <div class="mt-2">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.0500646762384!2d-58.458236400000004!3d-34.6281751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca266cd64faf%3A0xd2f35aa38c7f0e08!2sCamacu%C3%A1%2060%2C%20C1406DOB%20CABA!5e0!3m2!1ses!2sar!4v1679521414773!5m2!1ses!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        
-    </body>
+        <p class="derechos">© 2023 Todos los derechos reservados</p>
+
+        <div class="redes">
+            <a href="https://www.instagram.com/relajece/" target="_blank"> <i class="iconos fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://web.whatsapp.com/" target="_blank"> <i class="iconos fa-brands fa-whatsapp fa-bounce"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
 </html>

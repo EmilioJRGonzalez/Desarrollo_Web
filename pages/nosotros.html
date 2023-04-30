@@ -1,110 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>RelajeCe</title>
-        <link rel="icon" type="image/x-icon" href="../favicon.ico">
-        <link rel="stylesheet" href="../css/fontawesome/all.min.css">
-        <script src="../js/all.min.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/estilos.css">
 
-        <script nonce="8662a433-cef1-4a50-afa9-137bb3c46db3">(function(w,d){!function(cO,cP,cQ,cR){cO[cQ]=cO[cQ]||{};cO[cQ].executed=[];cO.zaraz={deferred:[],listeners:[]};cO.zaraz.q=[];cO.zaraz._f=function(cS){return function(){var cT=Array.prototype.slice.call(arguments);cO.zaraz.q.push({m:cS,a:cT})}};for(const cU of["track","set","debug"])cO.zaraz[cU]=cO.zaraz._f(cU);cO.zaraz.init=()=>{var cV=cP.getElementsByTagName(cR)[0],cW=cP.createElement(cR),cX=cP.getElementsByTagName("title")[0];cX&&(cO[cQ].t=cP.getElementsByTagName("title")[0].text);cO[cQ].x=Math.random();cO[cQ].w=cO.screen.width;cO[cQ].h=cO.screen.height;cO[cQ].j=cO.innerHeight;cO[cQ].e=cO.innerWidth;cO[cQ].l=cO.location.href;cO[cQ].r=cP.referrer;cO[cQ].k=cO.screen.colorDepth;cO[cQ].n=cP.characterSet;cO[cQ].o=(new Date).getTimezoneOffset();if(cO.dataLayer)for(const da of Object.entries(Object.entries(dataLayer).reduce(((db,dc)=>({...db[1],...dc[1]})))))zaraz.set(da[0],da[1],{scope:"page"});cO[cQ].q=[];for(;cO.zaraz.q.length;){const dd=cO.zaraz.q.shift();cO[cQ].q.push(dd)}cW.defer=!0;for(const de of[localStorage,sessionStorage])Object.keys(de||{}).filter((dg=>dg.startsWith("_zaraz_"))).forEach((df=>{try{cO[cQ]["z_"+df.slice(7)]=JSON.parse(de.getItem(df))}catch{cO[cQ]["z_"+df.slice(7)]=de.getItem(df)}}));cW.referrerPolicy="origin";cW.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(cO[cQ])));cV.parentNode.insertBefore(cW,cV)};["complete","interactive"].includes(cP.readyState)?zaraz.init():cO.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RelajeCe</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../css/fontawesome/all.min.css">
+  <script src="../js/all.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
 
-    </head>
-    <body>
-        <header class="portada2 container-fluid">
-            
-            <div class="contenedorHeader2 container-fluid">
+<body>
+  <header class="portada2 container-fluid">
 
-                <div class="row">
+    <div class="contenedorHeader2 container-fluid">
 
-                    <div class="col-sm-12 col-md-2">
-                        <img src="../assets/img/logo-removebg.png" alt="logo" width="100px">
-                    </div>
+      <div class="row">
 
-                    <div class="col-sm-12 col-md-8 align-self-end">
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                            <div class="container-fluid">
-                              <a class="navbar-brand" href="#">RelajeCe</a>
-                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                              </button>
-                              <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav w-100 d-flex justify-content-end">
-                                  <li class="nav-item">
-                                    <a class="nav-link menu-boton" href="../index.html">Inicio</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link menu-boton" href="./servicios.html">Servicios</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link menu-boton" href="./reserva.html">Reserva</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link active menu-activo" href="#">Nosotros</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link menu-boton" href="./contacto.html">Contacto</a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                        </nav>
-                    </div>
-                    
-                </div>
+        <div class="col-sm-12 col-md-2">
+          <img src="../assets/img/logo-removebg.png" alt="logo" class="logo-w">
+        </div>
 
+        <div class="col-sm-12 col-md-8 align-self-end">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">RelajeCe</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 d-flex justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link menu-boton" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu-boton" href="./servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu-boton" href="./reserva.html">Reserva</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active menu-activo" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu-boton" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </nav>
+        </div>
 
-        </header>
-        <main class="fondo">
-            <div class="p-5">
-                <h1 class="text-center titulo">Nosotros</h1>
-            </div>
+      </div>
 
-				<div class="text-center container">
-					<p>Nuestra empresa de masajes descontracturantes es una empresa familiar que se ha dedicado durante años a brindar servicios de alta calidad a nuestros clientes. Nos enorgullece trabajar con un equipo de terapeutas altamente capacitados y comprometidos con la excelencia en cada tratamiento.</p>
+    </div>
 
-					<p>En nuestra visión a futuro, queremos seguir creciendo como empresa y expandiendo nuestros servicios a un público más amplio. Creemos que todos merecen tener acceso a los beneficios del masaje terapéutico, y estamos comprometidos a seguir brindando tratamientos personalizados y adaptados a las necesidades individuales de cada cliente.</p>
+  </header>
+  <main class="fondo">
+    <div class="p-5">
+      <h1 class="centrar titulo">Nosotros</h1>
+    </div>
 
-					<p>Además, nos esforzamos por ofrecer un ambiente cálido y acogedor en cada una de nuestras sedes, donde nuestros clientes se sientan cómodos y relajados. Valoramos la confianza y la lealtad de nuestros clientes, y trabajamos duro para mantener nuestra reputación como una empresa confiable y comprometida con su bienestar.</p>
+    <div class="text-center container">
+      <p>Nuestra empresa de masajes descontracturantes es una empresa familiar que se ha dedicado durante años a brindar
+        servicios de alta calidad a nuestros clientes. Nos enorgullece trabajar con un equipo de terapeutas altamente
+        capacitados y comprometidos con la excelencia en cada tratamiento.</p>
 
-					<p>En resumen, nuestra empresa de masajes descontracturantes está comprometida con la excelencia y el bienestar de nuestros clientes. Estamos emocionados por lo que el futuro nos depara y esperamos seguir creciendo y mejorando para brindar los mejores servicios de masaje terapéutico a nuestra comunidad.</p>
-				</div>
-        </main>
-        
-        <footer class="container-fluid piePagina p-4">
-          <hr>
-          <div class="row">
-              <div class="mt-2">
-                  <p>solicitudes@relajece.com</p>
-              </div>
-              <div class="mt-2">
-                  <p>+(15) 1122-3344</p>
-              </div>
-              <div class="mt-2">
-                  <p>Camacua 60, Flores</p>
-              </div>
-              <div class="mt-2">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.0500646762384!2d-58.458236400000004!3d-34.6281751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca266cd64faf%3A0xd2f35aa38c7f0e08!2sCamacu%C3%A1%2060%2C%20C1406DOB%20CABA!5e0!3m2!1ses!2sar!4v1679521414773!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-          </div>
+      <p>En nuestra visión a futuro, queremos seguir creciendo como empresa y expandiendo nuestros servicios a un
+        público más amplio. Creemos que todos merecen tener acceso a los beneficios del masaje terapéutico, y estamos
+        comprometidos a seguir brindando tratamientos personalizados y adaptados a las necesidades individuales de cada
+        cliente.</p>
 
-          <p class="derechos">© 2023 Todos los derechos reservados</p>
+      <p>Además, nos esforzamos por ofrecer un ambiente cálido y acogedor en cada una de nuestras sedes, donde nuestros
+        clientes se sientan cómodos y relajados. Valoramos la confianza y la lealtad de nuestros clientes, y trabajamos
+        duro para mantener nuestra reputación como una empresa confiable y comprometida con su bienestar.</p>
 
-            <div class="redes">
-                <a href="https://www.instagram.com/relajece/" target="_blank"> <i class="iconos fa-brands fa-instagram"></i> </a>
-                <a href="https://web.whatsapp.com/" target="_blank"> <i class="iconos fa-brands fa-whatsapp fa-bounce"></i> </a>
-            </div>
-        </footer>
+      <p>En resumen, nuestra empresa de masajes descontracturantes está comprometida con la excelencia y el bienestar de
+        nuestros clientes. Estamos emocionados por lo que el futuro nos depara y esperamos seguir creciendo y mejorando
+        para brindar los mejores servicios de masaje terapéutico a nuestra comunidad.</p>
+    </div>
+  </main>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        
+  <footer class="container-fluid piePagina p-4">
+    <hr>
+    <div class="row">
+      <div class="mt-2">
+        <p>solicitudes@relajece.com</p>
+      </div>
+      <div class="mt-2">
+        <p>+(15) 1122-3344</p>
+      </div>
+      <div class="mt-2">
+        <p>Camacua 60, Flores</p>
+      </div>
+      <div class="mt-2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.0500646762384!2d-58.458236400000004!3d-34.6281751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca266cd64faf%3A0xd2f35aa38c7f0e08!2sCamacu%C3%A1%2060%2C%20C1406DOB%20CABA!5e0!3m2!1ses!2sar!4v1679521414773!5m2!1ses!2sar"
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
 
-        <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v2b4487d741ca48dcbadcaf954e159fc61680799950996" integrity="sha512-D/jdE0CypeVxFadTejKGTzmwyV10c1pxZk/AqjJuZbaJwGMyNHY3q/mTPWqMUnFACfCTunhZUVcd4cV78dK1pQ==" data-cf-beacon='{"rayId":"7b99d7a9fdcbc19b","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.3.0","si":100}' crossorigin="anonymous"></script>
+    <p class="derechos">© 2023 Todos los derechos reservados</p>
 
-    </body>
+    <div class="redes">
+      <a href="https://www.instagram.com/relajece/" target="_blank"> <i class="iconos fa-brands fa-instagram"></i> </a>
+      <a href="https://web.whatsapp.com/" target="_blank"> <i class="iconos fa-brands fa-whatsapp fa-bounce"></i> </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
