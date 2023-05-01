@@ -91,7 +91,7 @@ hr{
 }
 
 .servicio-descripcion{
-    margin: 2rem 6rem;
+    /* margin: 2rem 6rem; */
     color: #5f323b;
     margin-bottom:3rem !important;
 }
@@ -140,7 +140,17 @@ hr{
     background-color: #9e5462!important;
 }
 
+.mapa {
+    margin: 0 auto;
+    max-width: 500px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
+iframe {
+    max-width: 90vw;
+    max-height: 50.25vw;
+}
 
 
 
@@ -348,6 +358,11 @@ CALENDARIO By Alex Oliver https://www.sliderrevolution.com/resources/html-calend
 
     .calendar .rightCol{
         width: 100%;
+    }
+
+    .menu-activo{
+        background-color: initial;
+        color: #fd869c !important;
     }
     
 }
