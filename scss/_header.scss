@@ -1,0 +1,68 @@
+.logo-w{
+    width: 100px;
+}
+
+.portada{
+    background-image: linear-gradient(to right, $head-grad-color-1, $head-grad-color-2), url("../assets/img/theme-slide7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85vh;
+}
+
+.portada2{
+    background-image: linear-gradient(to right, $head-grad-color-1, $head-grad-color-2), url("../assets/img/page-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 62vh;
+}
+
+.menu-activo{
+    background-color: $color-primario;
+    color: white !important;
+}
+
+.navbar-expand-lg{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-item{
+    margin-left: 0.5rem;
+}
+
+.nav-link{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.menu-boton{
+    color: black !important;
+}
+
+.menu-boton:hover {
+    color: $color-primario !important;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .menu-activo{
+        background-color: initial;
+        color: $color-primario !important;
+    }
+
+    .navbar-expand-lg{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .nav-link{
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+    
+}
