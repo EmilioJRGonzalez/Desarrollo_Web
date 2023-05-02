@@ -1,6 +1,3 @@
-.logo-w{
-    width: 100px;
-}
 
 .portada{
     background-image: linear-gradient(to right, $head-grad-color-1, $head-grad-color-2), url("../assets/img/theme-slide7.jpg");
@@ -8,6 +5,11 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 85vh;
+    a{
+        .logo-w{
+            width: 100px;
+        }
+    }
 }
 
 .portada2{
@@ -16,53 +18,90 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 62vh;
+    a{
+        .logo-w{
+            width: 100px;
+        }
+    }
 }
 
-.menu-activo{
-    background-color: $color-primario;
-    color: white !important;
-}
 
-.navbar-expand-lg{
+.navbar{
     padding-top: 0;
     padding-bottom: 0;
-}
+    z-index: 5;
 
-.nav-item{
-    margin-left: 0.5rem;
-}
+    .nav-item{
+        margin-left: 0.5rem;
 
-.nav-link{
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
-}
+        .nav-link{
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+        }
 
-.menu-boton{
-    color: black !important;
-}
+        .menu-activo{
+            background-color: $color-primario;
+            color: white !important;
+        }
 
-.menu-boton:hover {
-    color: $color-primario !important;
-}
-
-
-
-
-@media only screen and (max-width: 768px) {
-
-    .menu-activo{
-        background-color: initial;
-        color: $color-primario !important;
+        .menu-boton{
+            color: black !important;
+            &:hover {
+                color: $color-primario !important;
+            }
+        }
     }
+}
+
+.navbar.sticky {
+    animation: fade-in 0.5s ease-out; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0px;
+    padding-left: 16.50rem;
+    padding-right: 16.50rem;
+    background: #1b1b1b;
+}
+
+@keyframes fade-in {
+    0%{
+        transform: translateY(-3rem);
+    }
+    100%{
+        transform: translateY(0px); 
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
 
     .navbar-expand-lg{
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+        .nav-item{
+
+            .nav-link{
+                padding-top: 0.5rem !important;
+                padding-bottom: 0.5rem !important;
+            }
+
+            .menu-activo{
+                background-color: initial;
+                color: $color-primario !important;
+            }
+
+        }
     }
 
-    .nav-link{
-        padding-top: 0.5rem !important;
-        padding-bottom: 0.5rem !important;
+    .navbar.sticky {
+        animation: fade-in 0.8s ease-out; 
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        background: #2e2c2c17;
     }
-    
+
 }

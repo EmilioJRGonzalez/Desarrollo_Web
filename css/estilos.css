@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap");
-.fondo {
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+body .fondo {
   /*background-image: linear-gradient(to top, #f5efef 20%, #feada6 100%);*/
   /*
   background: rgba(253,134,156,0.37);
@@ -11,12 +16,6 @@
   background: linear-gradient(270deg, rgba(255, 171, 186, 0.78) 0%, rgba(253, 134, 156, 0.26) 20%, rgba(253, 134, 156, 0.03) 90%);
   background: -webkit-linear-gradient(270deg, rgba(255, 171, 186, 0.78) 0%, rgba(253, 134, 156, 0.26) 20%, rgba(253, 134, 156, 0.03) 90%);
   background: -moz-linear-gradient(270deg, rgba(255, 171, 186, 0.78) 0%, rgba(253, 134, 156, 0.26) 20%, rgba(253, 134, 156, 0.03) 90%);
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
 }
 
 .color-fuerte {
@@ -55,7 +54,7 @@ hr {
   box-sizing: border-box;
 }
 
-.card {
+.servicios .card {
   margin-bottom: 2rem;
 }
 
@@ -65,16 +64,15 @@ hr {
   margin-bottom: 3rem !important;
 }
 
-.logo-w {
-  width: 100px;
-}
-
 .portada {
   background-image: linear-gradient(to right, rgba(44, 44, 44, 0.4784313725), rgba(0, 0, 0, 0.2784313725)), url("../assets/img/theme-slide7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 85vh;
+}
+.portada a .logo-w {
+  width: 100px;
 }
 
 .portada2 {
@@ -84,46 +82,73 @@ hr {
   background-position: center;
   height: 62vh;
 }
-
-.menu-activo {
-  background-color: #fd869c;
-  color: white !important;
+.portada2 a .logo-w {
+  width: 100px;
 }
 
-.navbar-expand-lg {
+.navbar {
   padding-top: 0;
   padding-bottom: 0;
+  z-index: 5;
 }
-
-.nav-item {
+.navbar .nav-item {
   margin-left: 0.5rem;
 }
-
-.nav-link {
+.navbar .nav-item .nav-link {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
 }
-
-.menu-boton {
+.navbar .nav-item .menu-activo {
+  background-color: #fd869c;
+  color: white !important;
+}
+.navbar .nav-item .menu-boton {
   color: black !important;
 }
-
-.menu-boton:hover {
+.navbar .nav-item .menu-boton:hover {
   color: #fd869c !important;
 }
 
-@media only screen and (max-width: 768px) {
-  .menu-activo {
-    background-color: initial;
-    color: #fd869c !important;
+.navbar.sticky {
+  animation: fade-in 0.5s ease-out;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0px;
+  padding-left: 16.5rem;
+  padding-right: 16.5rem;
+  background: #1b1b1b;
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateY(-3rem);
   }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media only screen and (max-width: 992px) {
   .navbar-expand-lg {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
-  .nav-link {
+  .navbar-expand-lg .nav-item .nav-link {
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
+  }
+  .navbar-expand-lg .nav-item .menu-activo {
+    background-color: initial;
+    color: #fd869c !important;
+  }
+  .navbar.sticky {
+    animation: fade-in 0.8s ease-out;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: rgba(46, 44, 44, 0.0901960784);
   }
 }
 /*
@@ -336,14 +361,17 @@ CALENDARIO By Alex Oliver https://www.sliderrevolution.com/resources/html-calend
   text-align: center;
   color: #9e5462;
 }
-
-.derechos {
-  margin-top: 20px;
-  font-size: 0.8rem;
-  font-weight: bold;
+.piePagina .mapa {
+  margin: 0 auto;
+  max-width: 500px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-
-.redes {
+.piePagina .mapa iframe {
+  max-width: 90vw;
+  max-height: 50.25vw;
+}
+.piePagina .redes {
   background-color: rgba(255, 255, 255, 0.63);
   height: 108px;
   width: 80px;
@@ -352,22 +380,14 @@ CALENDARIO By Alex Oliver https://www.sliderrevolution.com/resources/html-calend
   right: 0;
   border-radius: 5%;
 }
-
-.iconos {
+.piePagina .redes .iconos {
   font-size: 50px;
   color: #fd869c;
 }
-
-.mapa {
-  margin: 0 auto;
-  max-width: 500px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-iframe {
-  max-width: 90vw;
-  max-height: 50.25vw;
+.piePagina .derechos {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=estilos.css.map */
