@@ -1,51 +1,48 @@
 
-.portada{
-    background-image: linear-gradient(to right, $head-grad-color-1, $head-grad-color-2), url("../assets/img/theme-slide7.jpg");
+.portadaBasica{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 85vh;
-    a{
-        .logo-w{
+    a {
+        .logo-w {
             width: 100px;
         }
     }
 }
 
-.portada2{
-    background-image: linear-gradient(to right, $head-grad-color-1, $head-grad-color-2), url("../assets/img/page-header.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 62vh;
-    a{
-        .logo-w{
-            width: 100px;
-        }
-    }
+.portada {
+    @include portadaMixin($head-grad-color-1, $head-grad-color-2,
+        map-get($map-header, url1), map-get($map-header, height1));
+    @extend .portadaBasica;
 }
 
+.portada2 {
+    @include portadaMixin($head-grad-color-2, $head-grad-color-2,
+        map-get($map-header, url2), map-get($map-header, height2));
+    @extend .portadaBasica;
+}
 
-.navbar{
+.navbar {
     padding-top: 0;
     padding-bottom: 0;
     z-index: 5;
 
-    .nav-item{
+    .nav-item {
         margin-left: 0.5rem;
 
-        .nav-link{
+        .nav-link {
             padding-top: 1rem !important;
             padding-bottom: 1rem !important;
         }
 
-        .menu-activo{
+        .menu-activo {
             background-color: $color-primario;
             color: white !important;
         }
 
-        .menu-boton{
+        .menu-boton {
             color: black !important;
+
             &:hover {
                 color: $color-primario !important;
             }
@@ -54,7 +51,7 @@
 }
 
 .navbar.sticky {
-    animation: fade-in 0.5s ease-out; 
+    animation: fade-in 0.5s ease-out;
     position: fixed;
     top: 0;
     width: 100%;
@@ -65,28 +62,30 @@
 }
 
 @keyframes fade-in {
-    0%{
+    0% {
         transform: translateY(-3rem);
     }
-    100%{
-        transform: translateY(0px); 
+
+    100% {
+        transform: translateY(0px);
     }
 }
 
 
 @media only screen and (max-width: 992px) {
 
-    .navbar-expand-lg{
+    .navbar-expand-lg {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-        .nav-item{
 
-            .nav-link{
+        .nav-item {
+
+            .nav-link {
                 padding-top: 0.5rem !important;
                 padding-bottom: 0.5rem !important;
             }
 
-            .menu-activo{
+            .menu-activo {
                 background-color: initial;
                 color: $color-primario !important;
             }
@@ -95,7 +94,7 @@
     }
 
     .navbar.sticky {
-        animation: fade-in 0.8s ease-out; 
+        animation: fade-in 0.8s ease-out;
         position: fixed;
         top: 0;
         width: 100%;

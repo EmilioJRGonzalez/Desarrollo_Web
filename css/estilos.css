@@ -64,26 +64,23 @@ hr {
   margin-bottom: 3rem !important;
 }
 
-.portada {
-  background-image: linear-gradient(to right, rgba(44, 44, 44, 0.4784313725), rgba(0, 0, 0, 0.2784313725)), url("../assets/img/theme-slide7.jpg");
+.portadaBasica, .portada2, .portada {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 85vh;
 }
-.portada a .logo-w {
+.portadaBasica a .logo-w, .portada2 a .logo-w, .portada a .logo-w {
   width: 100px;
 }
 
-.portada2 {
-  background-image: linear-gradient(to right, rgba(44, 44, 44, 0.4784313725), rgba(0, 0, 0, 0.2784313725)), url("../assets/img/page-header.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 62vh;
+.portada {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5333333333), rgba(0, 0, 0, 0.5333333333)), url("../assets/img/theme-slide7.jpg");
+  height: 85vh;
 }
-.portada2 a .logo-w {
-  width: 100px;
+
+.portada2 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5333333333), rgba(0, 0, 0, 0.5333333333)), url("../assets/img/page-header.jpg");
+  height: 62vh;
 }
 
 .navbar {
