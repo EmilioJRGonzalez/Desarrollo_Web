@@ -74,12 +74,12 @@ hr {
 }
 
 .portada {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5333333333), rgba(0, 0, 0, 0.5333333333)), url("../assets/img/theme-slide7.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6274509804), rgba(0, 0, 0, 0.5333333333)), url("../assets/img/theme-slide7.jpg");
   height: 85vh;
 }
 
 .portada2 {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5333333333), rgba(0, 0, 0, 0.5333333333)), url("../assets/img/page-header.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6274509804), rgba(0, 0, 0, 0.5333333333)), url("../assets/img/page-header.jpg");
   height: 62vh;
 }
 
@@ -146,6 +146,11 @@ hr {
     padding-left: 1rem;
     padding-right: 1rem;
     background: rgba(46, 44, 44, 0.0901960784);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .portadaBasica a .logo-w, .portada a .logo-w, .portada2 a .logo-w {
+    padding-bottom: 1.5rem;
   }
 }
 /*

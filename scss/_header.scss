@@ -104,3 +104,13 @@
     }
 
 }
+
+@media only screen and (max-width: 768px) {
+    .portadaBasica{
+        a {
+            .logo-w {
+                padding-bottom: 1.5rem;
+            }
+        }
+    }
+}
