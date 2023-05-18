@@ -6,12 +6,6 @@ body {
 }
 body .fondo {
   /*background-image: linear-gradient(to top, #f5efef 20%, #feada6 100%);*/
-  /*
-  background: rgba(253,134,156,0.37);
-  background: linear-gradient(270deg,rgba(253,134,156,0.37) 0%, rgba(253,134,156,0.08) 10%);
-  background: -webkit-linear-gradient(270deg,rgba(253,134,156,0.37) 0%, rgba(253,134,156,0.08) 10%);
-  background: -moz-linear-gradient(270deg,rgba(253,134,156,0.37) 0%, rgba(253,134,156,0.08) 10%);
-  */
   background: rgba(255, 171, 186, 0.78);
   background: linear-gradient(270deg, rgba(255, 171, 186, 0.78) 0%, rgba(253, 134, 156, 0.26) 20%, rgba(253, 134, 156, 0.03) 90%);
   background: -webkit-linear-gradient(270deg, rgba(255, 171, 186, 0.78) 0%, rgba(253, 134, 156, 0.26) 20%, rgba(253, 134, 156, 0.03) 90%);
@@ -26,11 +20,11 @@ a {
   text-decoration: none;
 }
 
-hr {
+.piePagina hr, .fondo hr {
   color: #fd869c;
   width: 40%;
   margin: 30px auto;
-  height: 5px !important;
+  height: 5px;
   background-color: #fd869c;
 }
 
@@ -45,7 +39,7 @@ hr {
 }
 
 .dropdown-item:active {
-  background-color: #9e5462 !important;
+  background-color: #9e5462;
 }
 
 * {
@@ -88,22 +82,22 @@ hr {
   padding-bottom: 0;
   z-index: 5;
 }
-.navbar .nav-item {
+.navbar .navbar-nav .nav-item {
   margin-left: 0.5rem;
 }
-.navbar .nav-item .nav-link {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
+.navbar .navbar-nav .nav-item .nav-link {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-.navbar .nav-item .menu-activo {
+.navbar .navbar-nav .nav-item .menu-activo {
   background-color: #fd869c;
-  color: white !important;
+  color: white;
 }
-.navbar .nav-item .menu-boton {
-  color: black !important;
+.navbar .navbar-nav .nav-item .nav-link.menu-boton {
+  color: black;
 }
-.navbar .nav-item .menu-boton:hover {
-  color: #fd869c !important;
+.navbar .navbar-nav .nav-item .nav-link.menu-boton:hover {
+  color: #fd869c;
 }
 
 .navbar.sticky {
@@ -130,13 +124,13 @@ hr {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
-  .navbar-expand-lg .nav-item .nav-link {
-    padding-top: 0.5rem !important;
-    padding-bottom: 0.5rem !important;
+  .navbar-expand-lg .navbar-nav .nav-item .nav-link {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
-  .navbar-expand-lg .nav-item .menu-activo {
+  .navbar-expand-lg .navbar-nav .nav-item .menu-activo {
     background-color: initial;
-    color: #fd869c !important;
+    color: #fd869c;
   }
   .navbar.sticky {
     animation: fade-in 0.8s ease-out;

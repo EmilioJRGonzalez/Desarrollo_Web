@@ -27,24 +27,27 @@
     padding-bottom: 0;
     z-index: 5;
 
-    .nav-item {
-        margin-left: 0.5rem;
+    .navbar-nav{
 
-        .nav-link {
-            padding-top: 1rem !important;
-            padding-bottom: 1rem !important;
-        }
+        .nav-item {
+            margin-left: 0.5rem;
 
-        .menu-activo {
-            background-color: $color-primario;
-            color: white !important;
-        }
+            .nav-link {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
 
-        .menu-boton {
-            color: black !important;
+            .menu-activo {
+                background-color: $color-primario;
+                color: white;
+            }
 
-            &:hover {
-                color: $color-primario !important;
+            .nav-link.menu-boton {
+                color: black;
+
+                &:hover {
+                    color: $color-primario;
+                }
             }
         }
     }
@@ -78,18 +81,21 @@
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
 
-        .nav-item {
+        .navbar-nav{
 
-            .nav-link {
-                padding-top: 0.5rem !important;
-                padding-bottom: 0.5rem !important;
+            .nav-item {
+
+                .nav-link {
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                }
+
+                .menu-activo {
+                    background-color: initial;
+                    color: $color-primario;
+                }
+
             }
-
-            .menu-activo {
-                background-color: initial;
-                color: $color-primario !important;
-            }
-
         }
     }
 
