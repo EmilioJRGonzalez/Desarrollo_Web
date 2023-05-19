@@ -1,5 +1,13 @@
-.servicios{
-    .card{
-        margin-bottom:2rem;
+.fondo {
+    .servicios {
+        .card {
+            margin-bottom: 2rem;
+            transition: all 400ms ease-out;
+        }
+
+        .card:hover {
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4) !important;
+            transform: translateY(-2%);
+        }
     }
 }

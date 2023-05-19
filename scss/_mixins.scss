@@ -1,5 +1,5 @@
 
 @mixin portadaMixin($color1, $color2, $url, $height) {
-    background-image: linear-gradient(to right, $head-grad-color-1, $head-grad-color-2), url($url);
+    background-image: linear-gradient(to right, $color1, $color2), url($url);
     height: $height;
 }

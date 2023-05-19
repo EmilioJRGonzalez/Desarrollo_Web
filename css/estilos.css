@@ -48,16 +48,25 @@ a {
   box-sizing: border-box;
 }
 
-.servicios .card {
+.fondo .servicios .card {
   margin-bottom: 2rem;
+  transition: all 400ms ease-out;
+}
+.fondo .servicios .card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4) !important;
+  transform: translateY(-2%);
 }
 
 .servicio-descripcion {
-  /* margin: 2rem 6rem; */
   color: #5f323b;
-  margin-bottom: 3rem !important;
+  margin: 7rem;
 }
 
+@media only screen and (max-width: 992px) {
+  .servicio-descripcion {
+    margin: 1rem;
+  }
+}
 .portadaBasica, .portada2, .portada {
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,12 +77,12 @@ a {
 }
 
 .portada {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6274509804), rgba(0, 0, 0, 0.5333333333)), url("../assets/img/theme-slide7.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4392156863), rgba(0, 0, 0, 0.4392156863)), url("../assets/img/theme-slide7.jpg");
   height: 85vh;
 }
 
 .portada2 {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6274509804), rgba(0, 0, 0, 0.5333333333)), url("../assets/img/page-header.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6274509804), rgba(0, 0, 0, 0.6274509804)), url("../assets/img/page-header.jpg");
   height: 62vh;
 }
 

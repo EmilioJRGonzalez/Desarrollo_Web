@@ -11,7 +11,7 @@
 }
 
 .portada {
-    @include portadaMixin($head-grad-color-1, $head-grad-color-2,
+    @include portadaMixin($head-grad-color-1, $head-grad-color-1,
         map-get($map-header, url1), map-get($map-header, height1));
     @extend .portadaBasica;
 }
