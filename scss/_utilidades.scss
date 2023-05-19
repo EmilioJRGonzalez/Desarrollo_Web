@@ -5,8 +5,7 @@ body{
     font-size: 1.25rem;
 
     .fondo{
-        /*background-image: linear-gradient(to top, #f5efef 20%, #feada6 100%);*/
-        
+
         background: rgba(255,171,186,0.78);
         background: linear-gradient(270deg, $bkgrd-grad-color-1, $bkgrd-grad-color-2, $bkgrd-grad-color-3);
         background: -webkit-linear-gradient(270deg, $bkgrd-grad-color-1, $bkgrd-grad-color-2, $bkgrd-grad-color-3);
